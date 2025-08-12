@@ -100,6 +100,7 @@
             color: var(--secondary);
             font-size: 1.5rem;
             transition: transform 0.3s ease, color 0.3s ease;
+            text-decoration: none;
         }
         
         .social-link:hover {
@@ -348,13 +349,14 @@
     <header>
         <div class="particles" id="particles"></div>
         <div class="container header-content">
-            <img src="https://iimg.su/i/Hd5qWs" alt="PoofWhiteWhite" class="logo">
+            <img src="https://s.iimg.su/s/12/gHd5qWsxa4z24bX8L8rQlVuzoiuRvdwKpaWPAhXh.png" alt="PoofWhiteWhite" class="logo">
             <h1>PoofWhiteWhite</h1>
             <p class="tagline">Стример, геймер и просто хороший человек</p>
             <div class="social-links">
-                <a href="#" class="social-link">Twitch</a>
-                <a href="#" class="social-link">Discord</a>
-                <a href="#" class="social-link">YouTube</a>
+                <a href="https://www.twitch.tv/poofwhitewhite" class="social-link">Twitch</a>
+                <a href="https://discord.com/invite/4pqyUU5BY7" class="social-link">Discord</a>
+                <a href="https://boosty.to/poofwhitewhite" class="social-link">Boosty</a>
+                <a href="https://www.donationalerts.com/r/poofwhitewhite" class="social-link">DonationAlerts</a>
             </div>
         </div>
     </header>
@@ -394,15 +396,15 @@
             </div>
             <div class="gallery">
                 <div class="gallery-item">
-                    <img src="https://iimg.su/i/ibsnn3" alt="Хара-ки моего ПК" class="gallery-img">
+                    <img src="https://s.iimg.su/s/12/gibsnn3x6hWOsISqCEpce3lpyTa0XZQOn0CaTp8X.png" alt="Хара-ки моего ПК" class="gallery-img">
                     <div class="gallery-caption">Хара-ки моего ПК</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://iimg.su/i/MatP7Y" alt="PoofWhiteWhite" class="gallery-img">
+                    <img src="https://s.iimg.su/s/12/gMatP7YxB9SGzz3gfIPQRsnNaQ0DJVG4zWsPEc6m.png" alt="PoofWhiteWhite" class="gallery-img">
                     <div class="gallery-caption">Приветствие</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://iimg.su/i/ULaT17" alt="Поддержка" class="gallery-img">
+                    <img src="https://s.iimg.su/s/12/gULaT17xFkVjRzMzsLTkWadBsAJjA5qNVORmnmei.png" alt="Поддержка" class="gallery-img">
                     <div class="gallery-caption">Поддержка</div>
                 </div>
             </div>
@@ -483,7 +485,6 @@
     </footer>
     
     <script>
-        // Создание частиц 12
         document.addEventListener('DOMContentLoaded', function() {
             const particlesContainer = document.getElementById('particles');
             const particleCount = 30;
@@ -492,29 +493,23 @@
                 const particle = document.createElement('div');
                 particle.classList.add('particle');
                 
-                // Случайные размеры от 2px до 10px
                 const size = Math.random() * 8 + 2;
                 particle.style.width = `${size}px`;
                 particle.style.height = `${size}px`;
                 
-                // Случайная позиция
                 particle.style.left = `${Math.random() * 100}%`;
                 particle.style.top = `${Math.random() * 100}%`;
                 
-                // Случайная прозрачность
                 particle.style.opacity = Math.random() * 0.5 + 0.1;
                 
-                // Случайная длительность анимации от 10s до 30s
                 const duration = Math.random() * 20 + 10;
                 particle.style.animationDuration = `${duration}s`;
                 
-                // Случайная задержка анимации =-345
                 particle.style.animationDelay = `${Math.random() * 5}s`;
                 
                 particlesContainer.appendChild(particle);
             }
             
-            // Плавная прокрутка для якорей XD
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
